@@ -1,0 +1,204 @@
+body {
+  background-color: rgb(94, 93, 97) !important;
+  text-align: center;
+  padding: 55px 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes heightAnimate {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+#root {
+  width: 90%;
+  background-color: rgb(34, 34, 63);
+  margin: auto;
+  display: flex;
+  min-width: 1280px;
+}
+
+.left {
+  display: grid;
+  width: 30%;
+  background-image: url("./Cloud-background.png");
+  background-color: rgb(41, 41, 80);
+  background-position: center;
+  background-size: 150%;
+  align-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
+  padding: 20px;
+  /* height: 680px; */
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.errMess {
+  font-size: 30px;
+  color: #fff;
+}
+
+.searchContainer i {
+  color: #fff;
+}
+
+.left img {
+  width: 50%;
+  margin: auto;
+}
+
+.left h1 {
+  color: white;
+  font-size: 80px;
+}
+
+.left h1 span {
+  color: gray;
+  font-size: 50px;
+}
+
+.left h3 {
+  color: rgb(185, 179, 179);
+}
+
+.currentTime {
+  color: white;
+}
+
+#input-container {
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(41, 41, 80);
+  padding: 60px 20px;
+  display: none;
+}
+
+#input-container > span {
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  top: 0;
+  right: 20px;
+}
+
+#inputSearch {
+  display: flex;
+  justify-content: space-around;
+}
+
+#input-container input {
+  padding: 10px;
+  display: block;
+}
+
+#input-container button {
+  display: block;
+}
+
+.location {
+  color: #fff;
+}
+
+.location i {
+  margin-right: 8px;
+}
+
+.right {
+  padding: 30px 60px;
+  width: 100%;
+  background-color: #100e1d;
+}
+
+.right .button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-group button {
+  display: block;
+  border-radius: 50%;
+  padding: 10px 14px;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(160, 157, 157);
+}
+
+.button-group .button-active {
+  background-color: #fff;
+  color: black;
+}
+
+.right p {
+  color: #fff;
+}
+
+.forecast-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+}
+
+.hightlight-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.hightlight-com {
+  color: white;
+  background-color: rgb(50, 50, 87);
+  padding: 10px;
+  text-align: center;
+}
+
+.hightlight-com h1 {
+  font-size: 3.2rem;
+}
+
+.hightlight-com h1 span {
+  font-size: 40px;
+  position: relative;
+  top: -5px;
+}
+
+.progress-container {
+  width: 70%;
+  margin: auto;
+}
+
+.percent {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1280px) {
+  #root {
+    min-width: 96%;
+  }
+}

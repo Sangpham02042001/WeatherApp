@@ -1,0 +1,22 @@
+.forecast-card {
+  background-color: rgb(50, 50, 87) !important;
+  padding: 10px;
+  color: #ffffff;
+  justify-content: space-between;
+  min-height: 220px;
+}
+
+.forecast-temp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-temp .max-temp {
+  font-size: 1.2rem;
+  position: relative;
+  top: -3px;
+}
+
+.forecast-temp .min-temp {
+  color: rgb(185, 184, 184);
+}
