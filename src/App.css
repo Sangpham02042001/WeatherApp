@@ -239,11 +239,14 @@ body {
   .forecast-temp {
     flex-direction: column;
   }
+  .hightlight-com h1 span {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-  h1 {
-    font-size: 2rem;
+  .right h1 {
+    font-size: 1.5rem;
   }
   .forecast-list {
     grid-template-columns: repeat(1, 1fr);
