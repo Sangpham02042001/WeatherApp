@@ -2,19 +2,11 @@ import React, { Component } from "react";
 import {
   Card,
   CardImg,
-  CardImgOverlay,
   CardText,
-  CardBody,
   CardTitle,
-  Breadcrumb,
-  BreadcrumbItem,
 } from "reactstrap";
-import "../Forecast.css"
+import "../App.css"
 class FutureForeCast extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   getCelcius(isCelcius) {
     if (isCelcius) return "C";
     else return "F";

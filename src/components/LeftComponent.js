@@ -14,7 +14,7 @@ function Left({ temparature, weatherCondition, getDate, imgSource, cityName, err
                     }}>
                         Search for places
                     </Button>
-                    <i className="d-none d-lg-block far fa-compass fa-2x"></i>
+                    <i className="d-none far fa-compass"></i>
                 </div>
                 <p className="errMess">{errMess}</p>
             </React.Fragment>
